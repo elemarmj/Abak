@@ -66,7 +66,7 @@ if "df" not in st.session_state:
 
 df = st.session_state["df"]
 
-st.subheader("Informações gerais")
+st.subheader("Análise Numérica")
 st.write(df.shape)
 st.write(df.describe())
 
