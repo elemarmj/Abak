@@ -270,7 +270,7 @@ if up_arquivo is not None:
         # Salvar no session_state
         st.session_state['df'] = df
         st.success(f"✅ Arquivo '{up_arquivo.name}' carregado com sucesso! ({len(df)} linhas, {len(df.columns)} colunas)")
-        st.write("### Dados Originais (Primeiras 5 linhhas)")
+        st.write("### Pré Visualização (Primeiras 5 linhas)")
         st.dataframe(df.head())
 
     except Exception as e:
